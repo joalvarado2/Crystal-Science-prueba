@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d1e762e253.js" crossorigin="anonymous"></script>
+    <title>Crytal Science</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#preguntasFr">Preguntas Frecuentes</a>
+            <a href="#contacto">Contactos</a>
+        </nav>
+    </header>
+    <div class="hero" id="inicio">
+        <div class="container-hero">
+            
+            <h1>Crytal Science</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+            <a href="" class="btn">Contactar</a>
+        </div>
+    </div>
+    <div class="container">
+        <main class="servicios container">
+            <h2>Nuestros Proyectos</h2>
+            <div class="container-servicios">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./image/banner-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/banner-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <img src="./image/banner-3.jpg" class="d-block w-100" alt="...">
+                        </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="servicio" id="nosotros">
+                    <h3>Sobre Nosotros</h3>
+                    <div class="iconos">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nihil, odit suscipit neque
+                        inventore
+                        rerum repellendus optio numquam similique aspernatur.</p>
+                </div>
+
+                <div class="servicio" id="preguntasFr">
+                    <h3>Preguntas Frecuentes</h3>
+                    <div class="iconos">
+                        <i class="fas fa-pen-alt"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nihil, odit suscipit neque
+                        inventore
+                        rerum repellendus optio numquam similique aspernatur.</p>
+                </div>
+            </div>
+        </main>
+        <section id="contacto" class="contacto">
+            <h2>Contactenos</h2>
+            <form action="" class="formulario" id="formulario">
+                <legend>Contactános llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo" id="grupo__nombre">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input type="tel" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Correo</label>
+                        <input type="email" name="correo" placeholder="Correo">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                </div> <!-- contenedor-campos -->
+
+                <div class="enviar">
+                    <input type="submit" class="btn" value="enviar">
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>
