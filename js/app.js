@@ -1,9 +1,7 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
+const textarea = document.getElementById('information');
 
-let name1 = "";
-let email = "";
-let phone = "";
 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,255}$/, // Letras, numeros, guion y guion_bajo
@@ -12,25 +10,23 @@ const expresiones = {
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
-const campos = {
-	nombre: false,
-	correo: false,
-	telefono: false
+let campos = {
+	nombre: "",
+	correo: "",
+	telefono: "",
+	contenido: ""
 }
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "nombre":
-			console.log(e.target.value)
-            name1 = e.target.value;
+			campos.nombre = e.target.value;
 		break;
 		case "correo":
-			console.log(e.target.value)
-            email = e.target.value;
+			campos.correo = e.target.value;
 		break;
 		case "telefono":
-			console.log(e.target.value)
-            phone = e.target.value;
+			campos.telefono = e.target.value;
 		break;
 	}
 }
@@ -42,6 +38,6 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
-    console.log("hola")
-    console.log( name1 ,email, phone)
+	campos.contenido = textarea.value
+    console.log(campos)
 });
