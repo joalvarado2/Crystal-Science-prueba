@@ -2,6 +2,11 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const textarea = document.getElementById('information');
 
+// Obtén el elemento del menú de hamburguesa
+const menuIcon = document.querySelector('.menu-icon');
+// Obtén el elemento del menú
+const menu = document.querySelector('.menu');
+
 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,255}$/, // Letras, numeros, guion y guion_bajo
@@ -40,4 +45,9 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 	campos.contenido = textarea.value
     console.log(campos)
+});
+
+menuIcon.addEventListener('click', function() {
+  menuIcon.classList.toggle('active');
+  menu.classList.toggle('active');
 });

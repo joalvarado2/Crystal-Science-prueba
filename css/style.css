@@ -202,3 +202,26 @@ form legend{
     display: flex;
     justify-content: center;
 }
+  .menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .active {
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+  }
+  
+  .menu li a {
+    color: #131313;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: #ff8c00;
+  }
+  
